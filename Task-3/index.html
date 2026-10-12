@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevSpark | ApexPlanet Task 3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a class="brand" href="#home">DevSpark<span>.</span></a>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#quiz">Quiz</a>
+            <a href="#api">API Explorer</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div>
+                <p class="eyebrow">APEXPLANET INTERNSHIP · TASK 3</p>
+                <h1>Build. Learn.<br><span>Keep growing.</span></h1>
+                <p>Explore an interactive JavaScript quiz and fetch advice from a public API.</p>
+                <a class="button-link" href="#quiz">Start the quiz →</a>
+            </div>
+            <div class="code-card">
+                <p>const skills = [</p>
+                <p class="indent">"HTML",</p>
+                <p class="indent">"CSS",</p>
+                <p class="indent">"JavaScript"</p>
+                <p>];</p>
+                <small>// Keep learning!</small>
+            </div>
+        </section>
+
+        <section class="section" id="quiz">
+            <div class="heading">
+                <p class="eyebrow">TEST YOUR KNOWLEDGE</p>
+                <h2>JavaScript Mini Quiz</h2>
+                <p>Answer the questions and check your score.</p>
+            </div>
+
+            <div class="panel">
+                <div class="quiz-meta">
+                    <span id="counter">Question 1 of 5</span>
+                    <span id="score">Score: 0</span>
+                </div>
+                <div class="track"><div id="progress"></div></div>
+                <h3 id="question"></h3>
+                <div id="options" class="options"></div>
+                <p id="feedback" aria-live="polite"></p>
+
+                <div class="actions">
+                    <button id="next" disabled>Next question →</button>
+                    <button id="restart" class="secondary">Restart quiz</button>
+                </div>
+
+                <div id="result" hidden></div>
+            </div>
+        </section>
+
+        <section class="section api-section" id="api">
+            <div class="heading">
+                <p class="eyebrow">EXTERNAL API</p>
+                <h2>Random Advice Explorer</h2>
+                <p>Fetch new advice using JavaScript.</p>
+            </div>
+
+            <div class="panel api-panel">
+                <p id="advice">Click below to fetch advice.</p>
+                <p id="apiStatus" aria-live="polite">Ready to connect</p>
+                <button id="fetchAdvice">Get New Advice</button>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="heading">
+                <p class="eyebrow">TASK 3</p>
+                <h2>Project Features</h2>
+            </div>
+            <div class="grid">
+                <article>
+                    <h3>Responsive Design</h3>
+                    <p>Media queries support mobile, tablet and desktop.</p>
+                </article>
+                <article>
+                    <h3>Interactive Quiz</h3>
+                    <p>Answer questions, check your score and restart.</p>
+                </article>
+                <article>
+                    <h3>API Integration</h3>
+                    <p>Fetch and display dynamic data from an API.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>ApexPlanet Internship — Task 3</p>
+        <a href="#home">Back to top ↑</a>
+    </footer>
+</body>
+</html>
